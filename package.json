@@ -1,0 +1,17 @@
+{
+  "name": "abiball-seite",
+  "version": "1.0.0",
+  "description": "AbiBall DateiManager",
+  "main": "websideLogic.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arwed Schrade",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
