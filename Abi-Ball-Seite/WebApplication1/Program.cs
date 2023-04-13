@@ -1,4 +1,10 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using AbiBall.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<StudentListContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("StudentListContext") ?? throw new InvalidOperationException("Connection string 'StudentListContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
